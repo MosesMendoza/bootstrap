@@ -39,8 +39,8 @@
   }
 
   @include form-validation-state-selector($state) {
-    ~ .#{$state}-feedback,
-    ~ .#{$state}-tooltip {
+    + .#{$state}-feedback,
+    + .#{$state}-tooltip {
       display: block;
     }
   }
@@ -110,7 +110,7 @@
     }
   }
   .form-check-inline .form-check-input {
-    ~ .#{$state}-feedback {
+    + .#{$state}-feedback {
       margin-left: .5em;
     }
   }
